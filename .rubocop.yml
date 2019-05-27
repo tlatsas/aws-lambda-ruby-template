@@ -1,0 +1,21 @@
+Lint/HandleExceptions:
+  Exclude:
+    - 'Rakefile'
+
+Lint/UnusedMethodArgument:
+  Exclude:
+    - 'handlers/template.rb'
+
+Style/BlockComments:
+  Exclude:
+    - 'spec/spec_helper.rb'
+
+Style/ClassVars:
+  Exclude:
+    - 'lib/log.rb'
+
+Style/Documentation:
+  Enabled: false
+
+Metrics/LineLength:
+  Max: 90
