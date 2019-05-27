@@ -33,3 +33,10 @@ namespace :deploy do
     system "serverless deploy --stage #{args.env} --region eu-west-1"
   end
 end
+
+require 'rubocop/rake_task'
+
+desc 'Run rubocop rules and fail on fatal errors'
+RuboCop::RakeTask.new(:rubocop) do |t|
+  t.options = %w[--format simple --display-cop-names --fail-level F]
+end
