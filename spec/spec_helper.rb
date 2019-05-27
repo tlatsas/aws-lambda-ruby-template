@@ -98,3 +98,5 @@ RSpec.configure do |config|
   Kernel.srand config.seed
 =end
 end
+
+ENV['APP_ENV'] = 'test'
